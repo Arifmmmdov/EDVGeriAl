@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    tools:context=".fragment.EnterFiscalIDFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_enterFiscal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/arrow_back_fiscal_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/ic_arrow_back"
+            android:backgroundTint="#474747" />
+
+        <TextView
+            android:id="@+id/bonuses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.01"
+            android:layout_centerInParent="true"
+            android:text="Enter fiscal ID"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_input_fiscal"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_enterFiscal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiscal ID"
+            android:textColor="#5F6369"
+            android:textSize="14sp"
+            android:letterSpacing="0.03"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_fiscal_id"
+            android:hint="16 symbols"
+            android:textColorHint="#5F6369"
+            android:maxLength="16"
+            android:inputType="text"
+            android:digits="0,1,2,3,4,5,6,7,8,9,qwertzuiopasdfghjklyxcvbnm"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:letterSpacing="0.03"
+            android:background="@null"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linear_input_fiscal"
+        android:id="@+id/btn_continue"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="continue"
+        android:textStyle="bold"
+        app:cornerRadius="8sp"
+        android:backgroundTint="@color/grey"
+        android:clickable="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:letterSpacing="0.08"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
