@@ -26,8 +26,8 @@ class BonusesFragment : Fragment() {
     }
 
     private fun setUpViewPager() {
-        binding.viewPager.adapter = PagerAdapter(childFragmentManager) as RecyclerView.Adapter<*>
-        binding.tabs.setupWithViewPager(binding.viewPager as ViewPager,true)
+        binding.viewPager.adapter = PagerAdapter(childFragmentManager)
+        binding.tabs.setupWithViewPager(binding.viewPager,true)
     }
 
 }

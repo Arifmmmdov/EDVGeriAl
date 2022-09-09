@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/fragment_actions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/fragment_bonuses.xml" value="0.12" />
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/fragment_history.xml" value="0.10052083333333334" />
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/item_recyc_actions.xml" value="0.176" />
+        <entry key="..\:/Users/Arif/EDVGeriAl/app/src/main/res/layout/item_recyc_history.xml" value="0.47361647361647363" />
         <entry key="..\:/Users/User6/Desktop/EDVGeriAl/app/src/main/res/drawable/ic_card.xml" value="0.1055" />
         <entry key="..\:/Users/User6/Desktop/EDVGeriAl/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User6/Desktop/EDVGeriAl/app/src/main/res/layout/fragment_actions.xml" value="0.1" />

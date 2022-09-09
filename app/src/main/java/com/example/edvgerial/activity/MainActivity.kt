@@ -2,6 +2,7 @@ package com.example.edvgerial.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.edvgerial.R
 import com.example.edvgerial.databinding.ActivityMainBinding
 import com.example.edvgerial.fragment.BonusesFragment
 
@@ -19,6 +20,6 @@ class MainActivity : AppCompatActivity() {
     private fun setFragmentView() {
         val fragmentManager = supportFragmentManager
         fragmentManager.beginTransaction()
-            .show(BonusesFragment()).commit()
+            .replace(R.id.fragment_container,BonusesFragment()).commit()
     }
 }

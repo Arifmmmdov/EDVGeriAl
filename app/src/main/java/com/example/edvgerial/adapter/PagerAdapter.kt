@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.edvgerial.fragment.viewpagersfragments.ActionsFragment
 import com.example.edvgerial.fragment.viewpagersfragments.HistoryFragment
+import com.example.edvgerial.repository.MyRepo
 
 class PagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
@@ -18,6 +19,10 @@ class PagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(frag
             0 -> ActionsFragment()
             else -> {HistoryFragment()}
         }
+    }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return MyRepo.getTabs()[position]
     }
 
 }
