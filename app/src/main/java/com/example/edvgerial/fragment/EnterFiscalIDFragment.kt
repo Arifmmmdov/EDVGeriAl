@@ -34,10 +34,11 @@ class EnterFiscalIDFragment : Fragment() {
     }
 
     private fun onContinueClicked(view:View) {
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container,ReceiptFragment())
-            .addToBackStack("")
-            .commit()
+        if(binding.btnContinue.isEnabled)
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container,ReceiptFragment())
+                .addToBackStack("")
+                .commit()
     }
 
 }

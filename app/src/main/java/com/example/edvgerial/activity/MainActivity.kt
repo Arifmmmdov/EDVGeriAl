@@ -2,6 +2,7 @@ package com.example.edvgerial.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.edvgerial.R
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setFragmentView()
     }
+
 
     private fun setFragmentView() {
         supportFragmentManager.beginTransaction()

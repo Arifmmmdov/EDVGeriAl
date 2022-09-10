@@ -1,8 +1,10 @@
 package com.example.edvgerial.textwatcher
 
 import android.content.Context
+import android.os.Build
 import android.text.Editable
 import android.text.TextWatcher
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import com.example.edvgerial.R
 import com.example.edvgerial.databinding.FragmentEnterFiscalIDBinding
@@ -17,10 +19,10 @@ class MyTextWatcher(private val binding:FragmentEnterFiscalIDBinding,private val
     override fun afterTextChanged(p0: Editable?) {
         if(p0.toString().length == 16){
             binding.btnContinue.setBackgroundColor(ContextCompat.getColor(context,R.color.orange))
-            binding.btnContinue.isClickable = true
+            binding.btnContinue.isEnabled = true
         }else{
             binding.btnContinue.setBackgroundColor(ContextCompat.getColor(context,R.color.grey))
-            binding.btnContinue.isClickable = false
+            binding.btnContinue.isEnabled = false
         }
     }
 }
